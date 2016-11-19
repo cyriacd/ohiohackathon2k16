@@ -1,0 +1,19 @@
+{
+  "name": "lyt",
+  "version": "1.0.0",
+  "description": "Back-end to lyt application",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kamari Wright & Shantanu Bhardwaj",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.7.5",
+    "express": "^4.14.0",
+    "spotify-web-api-node": "^2.3.6"
+  }
+}
