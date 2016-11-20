@@ -1,0 +1,26 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.40
+4 verbose config Skipping project config: /Users/rathomas17/.npmrc. (matches userconfig)
+5 error TypeError: undefined is not a function
+5 error     at autoinit (/usr/local/lib/node_modules/npm-autoinit/autoinit.js:8:3)
+5 error     at Object.<anonymous> (/usr/local/lib/node_modules/npm-autoinit/autoinit.js:23:3)
+5 error     at Module._compile (module.js:456:26)
+5 error     at Object.Module._extensions..js (module.js:474:10)
+5 error     at Module.load (module.js:356:32)
+5 error     at Function.Module._load (module.js:312:12)
+5 error     at Module.require (module.js:364:17)
+5 error     at require (module.js:380:17)
+5 error     at cb (/usr/local/lib/node_modules/npm/lib/npm.js:288:7)
+5 error     at /usr/local/lib/node_modules/npm/lib/npm.js:377:14
+6 error If you need help, you may report this *entire* log,
+6 error including the npm and node versions, at:
+6 error     <http://github.com/npm/npm/issues>
+7 error System Darwin 14.5.0
+8 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+9 error cwd /Users/rathomas17/Desktop/ohiohackathon2k16
+10 error node -v v0.10.40
+11 error npm -v 1.4.28
+12 error type called_non_callable
+13 verbose exit [ 1, true ]
