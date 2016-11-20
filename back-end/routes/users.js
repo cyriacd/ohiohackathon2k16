@@ -1,7 +1,7 @@
 var express = require('express');
-require = express.Router();
+var router = express.Router();
 
-router.get('/users', function(req, res){
+router.get('/', function(req, res){
   res.json({message: "Users Route Works."});
 });
 

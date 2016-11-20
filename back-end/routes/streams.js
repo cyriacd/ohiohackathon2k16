@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res){
-  //Get the songs from Spotify
-  res.json({message: "Song Route Works."})
+  //TODO: Grab parties from DynamoDB and return them.
+  res.json({message: "Streams Route Works."});
 });
 
 module.exports = router;

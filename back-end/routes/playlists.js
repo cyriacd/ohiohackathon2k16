@@ -1,8 +1,14 @@
-var express = require('express');
-require = express.Router();
+var express = require('express')
+var router = express.Router()
 
-router.get('/playlists', function(req, res){
-  res.json({message: "Playlist Route Works."});
+//TODO: Grab all the playlists of the user.
+router.get('/', function(req, res){
+  res.json({message: "Playlist Route Works."})
+});
+
+//TODO: Get specific playlist
+router.get('/:playlist_id', function(req, res){
+
 });
 
 module.exports = router;

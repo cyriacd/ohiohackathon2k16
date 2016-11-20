@@ -59,19 +59,19 @@ body {
     top: 50%;
     z-index: 999;
     text-align: center;
-    @include translate(-50%, -50%); 
+    @include translate(-50%, -50%);
     h1 {
         font-size:48px;
         color: white;
       padding:0 10px;
         small {
           font:300 18px  $font-regular ;
-          color: white;  
+          color: white;
           display: block;
           margin: 10px 0;
-        }        
+        }
     }
-   
+
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -88,13 +88,7 @@ body {
   }
 }
 
-@media (max-width: 767px) {
-  .fullscreen-bg {
-    background: url('http://ui.specbee.com/sample/videoframe.jpg') center center / cover no-repeat;
-    @include background-size(cover);
-  }
 
-  .fullscreen-bg__video {
-    display: none;
-  }
+
+  
 }
