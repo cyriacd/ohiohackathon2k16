@@ -41,23 +41,25 @@ var spotifyApi = new spotifyWebApi({
   clientSecret : '09bf1dccc0cb4a15aec478c1bfeb4784'
 });
 
-spotifyApi.setAccessToken('BQBReQf_u3JZrTUco1ye2r3TXEpaxLy04vj02SVFoAYahU9Z6aI-5F1UJf8jKxlgR8CVFHR5MNXiJWLYatSJpL4JJxMshLocGmJ7TJ6N2O5Yim3mr7m0NqEAVlkjYE0mjqleypeQ_AM');
+spotifyApi.setAccessToken('BQBSpeEbxTSZb2uOPsDENXjHxEohxrZhAUMrUl2gWqgoltbWqZxdvhzdhjPFH7Z4GaMGtr_FScRhI93giBfDLLT5q_M_cTPZsnR09qCXYUQidoIOlSOk4uiDO0vJDYcUjrtj8_1o-Zo');
 
-var trackId = '';
+var playlistId = '';
 
   // Get a user's playlists 
 var a = spotifyApi.getUserPlaylists('seanhack94');
 a.then(function(data) {
     console.log(data.body.items[0].id);
-    trackId = data.body.items[0].id;
+    playlistId = data.body.items[0].id;
+
+    spotifyApi.getPlaylistTracks('seanhack94', playlistId)
+	.then(function(data) {
+		for(var i = 0; i < data.body.items.length; i++) {
+			console.log(data.body.items[i].track.id);
+		}
+	}, function(err) {
+		console.log('Something went wrong!', err);
+	});
+
   },function(err) {
     console.log('Something went wrong!', err);
   });
-
-
-spotifyApi.getPlaylistTracks('seanhack94', '5FVEoptj2GDKO5qpqX56Ra')
-.then(function(data) {
-	console.log(data.body.items[3].track.id);
-}, function(err) {
-	console.log('Something went wrong!', err);
-});
