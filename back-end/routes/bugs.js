@@ -1,8 +1,8 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-require = express.Router();
+var router = express.Router();
 
-router.get('/bugs', function(req, res){
+router.get('/', function(req, res){
   res.json({message: "Bug Route Works."});
 });
 
